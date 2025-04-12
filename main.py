@@ -292,7 +292,7 @@ async def search_flights(
             "search_id": transformed_data["search_id"],
             "flights_count": len(transformed_data["flights"]),
             "currency": currency,
-            "path": server.storage.temp_dir,
+            # "path": server.storage.temp_dir,
             # "transformed_data": transformed_data
         }
 
@@ -388,7 +388,7 @@ def filter_flights(
         "filtered_count": len(filtered_flights),
         "total_count": len(flights),
         "flights": filtered_flights,
-        "storage":storage.temp_dir / f"search_{search_id}.json"
+        # "storage":storage.temp_dir / f"search_{search_id}.json"
     }
 
 if __name__ == "__main__":
